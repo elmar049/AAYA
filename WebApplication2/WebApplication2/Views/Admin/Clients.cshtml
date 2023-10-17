@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Clients";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2>Clients</h2>
+
+
+<form action="/Admin/Clients" method="POST" runat="server">
+
+    <input type="text" id="Shirket adi" name="shirketadi" placeholder="Shirket adi" required> <br><br>
+
+    <input type="text" id="VOEN" name="voen" placeholder="VOEN" required><br><br>
+
+    <input type="text" id="Aldigi Xidmet" name="AldigiXidmet" placeholder="Aldigi Xidmet" required><br><br>
+
+    <input type="text" id="Mugavile Nomresi" name="MugavileNom" placeholder="Mugavile Nomresi" required><br><br>
+
+    <input type="text" id="Shirket adi" name="Tarixi" placeholder="Mugavile Tarixi" required><br><br>
+
+    <input type="text" id="Ayliq Odenish" name="Payment" placeholder="Ayliq Odenish"  required><br><br>
+
+
+
+
+    <input type="submit" value="Gonder">
+</form>
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <table class="table table-bordered table-dark">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Shirket Adi</th>
+                <th scope="col">VOEN</th>
+                <th scope="col">Aldigi Xidmet</th>
+                <th scope="col">Mugavile Nomresi</th>
+                <th scope="col">Mugavile Tarixi</th>
+                <th scope="col">Ayliq Odenish</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"></th>
+                <td>@ViewBag.ClientName</td>
+                <td>@ViewBag.Voen</td>
+                <td>@ViewBag.ClientService</td>
+                <td>@ViewBag.MugavileNom</td>
+                <td>@ViewBag.MugavileTarix</td>
+                <td>@ViewBag.Payment}"</td>
+            </tr>
+            <tr>
+
+        </tbody>
+    </table>
+
+

@@ -1,0 +1,26 @@
+﻿@model WebApplication2.Models.Bank
+
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2>View</h2>
+
+<div>
+    <h4>Bank</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BankRekvizitleri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankRekvizitleri)
+        </dd>
+
+    </dl>
+</div>
+<p>
+   
+</p>
